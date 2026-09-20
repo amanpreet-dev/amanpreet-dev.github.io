@@ -39,6 +39,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Fonts: Fraunces (headings) + Inter (body/UI). display=swap avoids invisible text while loading. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+
   <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Google tag (gtag.js) -->
@@ -98,22 +104,23 @@
     <!-- Hero -->
     <section id="top" class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow">Lead DevOps &amp; SRE</p>
-        <h1>Amanpreet Singh Dalmi</h1>
-        <p class="hero-positioning">Platform Engineering · DevOps · SRE · Cloud Infrastructure · Technical Leadership ·
-          AI-Augmented Engineering</p>
+        <p class="hero-eyebrow">Amanpreet Singh Dalmi · Lead DevOps &amp; SRE</p>
+        <h1>I turn manual deployments into reliable, observable platforms.</h1>
         <p class="hero-summary">
-          An 18-year engineering journey — from junior developer to Lead DevOps &amp; SRE — spanning
-          software engineering, platform engineering, DevOps, SRE, and technical leadership, sharpened
-          more recently by hands-on, AI-augmented engineering practice. I've built an engineering team
-          from the ground up to roughly 15 people, managed concurrent client engagements across
-          Healthcare, EdTech, and E-commerce, and today own production reliability end-to-end for a
-          Canada-based SaaS platform — CI/CD, environment provisioning, and full-stack observability.
+          Eighteen years across software engineering, platform engineering, and technical leadership — from
+          building a team of roughly 15 to owning production reliability end-to-end for a Canada-based SaaS platform.
+          Today that means Azure DevOps CI/CD, self-service environments, full-stack observability, and hands-on
+          AI-augmented engineering.
         </p>
+        <p class="hero-tags">Platform Engineering · DevOps · SRE · Cloud Infrastructure · Technical Leadership</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#resume">View Resume</a>
+
+          <a class="btn btn-primary" href="mailto:hire@amanpreet.dev?subject=Hiring%20enquiry">Hire Me</a>
+          <!-- Secondary: LinkedIn -->
           <a class="btn btn-secondary" href="https://www.linkedin.com/in/amanpreet-dev/" target="_blank"
-            rel="noopener noreferrer">Let's Collaborate</a>
+            rel="noopener noreferrer">Connect on LinkedIn</a>
+          <!-- Tertiary: resume download -->
+          <a class="btn btn-tertiary" href="/assets/resume.pdf" download>Download resume</a>
         </div>
         <div class="social-row">
           <a href="https://github.com/amanpreet-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -138,7 +145,10 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="/assets/avatar.jpg" alt="Amanpreet Singh Dalmi" width="176" height="176">
+        <picture>
+          <source srcset="/assets/avatar.webp" type="image/webp">
+          <img src="/assets/avatar.jpg" alt="Amanpreet Singh Dalmi" width="400" height="400" fetchpriority="high">
+        </picture>
       </div>
     </section>
 
@@ -151,8 +161,8 @@
       <ol class="timeline">
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">May 2008 – Nov 2011</p>
           <div class="timeline-card">
-            <p class="timeline-dates">May 2008 – Nov 2011</p>
             <h3 class="timeline-employer">Infotech Consultants, Dehradun</h3>
             <p class="timeline-title">Software Engineering</p>
             <p class="timeline-highlight">Built PHP, MySQL, and WordPress web applications, leading a team of four.</p>
@@ -161,8 +171,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">Nov 2011 – Mar 2015</p>
           <div class="timeline-card">
-            <p class="timeline-dates">Nov 2011 – Mar 2015</p>
             <h3 class="timeline-employer">GBKC Fashions Pvt. Ltd, Selaqui, Dehradun</h3>
             <p class="timeline-title">Software Engineering</p>
             <p class="timeline-highlight">Sole engineer for a manufacturing company — built payroll, attendance,
@@ -172,8 +182,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">Apr 2015 – Apr 2019</p>
           <div class="timeline-card">
-            <p class="timeline-dates">Apr 2015 – Apr 2019</p>
             <h3 class="timeline-employer">smartData Enterprises Inc., Dehradun</h3>
             <p class="timeline-title">Software Engineering Manager</p>
             <p class="timeline-highlight">Managed five concurrent client projects across Healthcare, EdTech, and
@@ -183,8 +193,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">May 2019 – Jan 2020</p>
           <div class="timeline-card">
-            <p class="timeline-dates">May 2019 – Jan 2020</p>
             <h3 class="timeline-employer">Freelancing, Remote</h3>
             <p class="timeline-title">Software Engineering</p>
             <p class="timeline-highlight">Independent software engineering engagements between full-time roles.</p>
@@ -193,8 +203,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">Feb 2020 – Jul 2023</p>
           <div class="timeline-card">
-            <p class="timeline-dates">Feb 2020 – Jul 2023</p>
             <h3 class="timeline-employer">KOCO, Singapore, Remote</h3>
             <p class="timeline-title">Head of Engineering → Head of Product and Engineering</p>
             <p class="timeline-highlight">Built and led an engineering team from the ground up to roughly 15 people at
@@ -209,8 +219,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">Jul 2023 – Feb 2025</p>
           <div class="timeline-card">
-            <p class="timeline-dates">Jul 2023 – Feb 2025</p>
             <h3 class="timeline-employer">Freelancing, Remote</h3>
             <p class="timeline-title">Software Consultant</p>
             <p class="timeline-highlight">Independent consulting for JMDi Academy, Dehradun — discovered requirements
@@ -221,8 +231,8 @@
 
         <li class="timeline-item reveal">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">Feb 2025 – May 2025</p>
           <div class="timeline-card">
-            <p class="timeline-dates">Feb 2025 – May 2025</p>
             <h3 class="timeline-employer">Team Computers, Remote</h3>
             <p class="timeline-title">Technical Manager</p>
             <p class="timeline-highlight">Led a roughly 12-person team building a supply-chain management platform for
@@ -231,12 +241,12 @@
           </div>
         </li>
 
-        <li class="timeline-item reveal">
+        <li class="timeline-item is-current reveal" aria-current="true">
           <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-dates">May 2025 – Present</p>
           <div class="timeline-card">
-            <p class="timeline-dates">May 2025 – Present<span class="badge">Current</span></p>
             <h3 class="timeline-employer">CodeJi Infotech Pvt. Limited, Dehradun, India</h3>
-            <p class="timeline-title">Lead DevOps &amp; SRE</p>
+            <p class="timeline-title">Lead DevOps &amp; SRE <span class="badge">Current</span></p>
             <p class="timeline-highlight">Working on the Amélio Inc. (Canada-based SaaS) engagement: replaced a fully
               manual, RDP-based deployment process with Azure DevOps CI/CD and a self-service environment-cloning
               platform — removing 10-12 manual steps and supporting 15-20 concurrent environments. Took the platform
@@ -252,42 +262,76 @@
       <h2 class="section-heading">Engineering Capabilities</h2>
       <div class="capabilities-grid">
         <div class="capability-card">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 19a5 5 0 0 1-1-9.9A6 6 0 0 1 17 8a4.5 4.5 0 0 1 1 8.9M12 12v9m0-9 3 3m-3-3-3 3" fill="none"
-              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
+          <span class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 19a5 5 0 0 1-1-9.9A6 6 0 0 1 17 8a4.5 4.5 0 0 1 1 8.9M12 12v9m0-9 3 3m-3-3-3 3" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
           <h3>Cloud &amp; DevOps Automation</h3>
           <p>Azure, Azure DevOps CI/CD, environment provisioning, Docker, database &amp; messaging architecture — plus a
             decade on AWS (2015&ndash;2025) before the shift to Azure.
           </p>
         </div>
         <div class="capability-card">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 3v18h18M7 15l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
+          <span class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 3v18h18M7 15l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
           <h3>Observability &amp; SRE</h3>
           <p>Prometheus, Grafana, Loki — dashboards, alerting, and end-to-end production incident response.</p>
         </div>
         <div class="capability-card">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m8.5 14.5 2 2 5-5M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0" fill="none" stroke="currentColor"
-              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
+          <span class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
+          <h3>Full-Stack Development</h3>
+          <p>TypeScript, Node.js, React, Angular, and React Native — 18 years shipping product code, from PHP and
+            MySQL through to modern TypeScript stacks, APIs, and the mobile apps on top of them.</p>
+        </div>
+        <div class="capability-card">
+          <span class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m8.5 14.5 2 2 5-5M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
           <h3>Client-Facing Delivery</h3>
           <p>Requirements discovery through to deployed, production-owned solutions, working directly with client teams.
           </p>
         </div>
         <div class="capability-card">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="5" y="7" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
-            <path d="M9 3v4m6-4v4M9 13h.01M15 13h.01M9 17h6" fill="none" stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" />
-          </svg>
+          <span class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="7" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
+              <path d="M9 3v4m6-4v4M9 13h.01M15 13h.01M9 17h6" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" />
+            </svg></span>
           <h3>AI-Augmented Engineering</h3>
           <p>AI-assisted, agentic development workflows for developer productivity.</p>
         </div>
       </div>
+      <!-- PROOF OF WORK (TODO(Aman): drop screenshots into /assets/proof/ and uncomment).
+           Use webp, ~1280x800, and always set width/height. Good candidates: a Grafana dashboard,
+           the Azure DevOps pipeline run, an architecture diagram. Styles live in css/styles.css (.proof-grid).
+
+      <ul class="proof-grid">
+        <li>
+          <figure class="proof-item">
+            <img src="/assets/proof/grafana-dashboard.webp" alt="Grafana dashboard showing service health" width="1280" height="800" loading="lazy">
+            <figcaption>Grafana — service health dashboard (one of 7)</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="proof-item">
+            <img src="/assets/proof/cicd-pipeline.webp" alt="Azure DevOps CI/CD pipeline run" width="1280" height="800" loading="lazy">
+            <figcaption>Azure DevOps — CI/CD pipeline replacing manual RDP deploys</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="proof-item">
+            <img src="/assets/proof/architecture.webp" alt="Environment-cloning platform architecture diagram" width="1280" height="800" loading="lazy">
+            <figcaption>Self-service environment-cloning architecture</figcaption>
+          </figure>
+        </li>
+      </ul>
+      -->
       <p class="capabilities-note">Certified: AWS Certified Cloud Practitioner · AWS Certified AI Practitioner</p>
     </section>
 
@@ -322,22 +366,23 @@
     <!-- Resume -->
     <section id="resume" class="section section-center">
       <h2 class="section-heading">Resume</h2>
-      <p class="section-lede" style="margin: 0 auto var(--space-6);">Download my current resume for a full breakdown of
-        my experience.</p>
-      <!-- TODO(Aman): replace # with the hosted resume URL once one is published -->
-      <a href="#" class="btn btn-primary">Download Resume (PDF)</a>
+      <p class="section-lede">Download my current resume for a full breakdown of my experience.</p>
+      <!-- TODO(Aman): drop your resume PDF at assets/resume.pdf (exactly that filename). Until then this link 404s. -->
+      <a href="/assets/resume.pdf" class="btn btn-secondary" download>Download Resume (PDF)</a>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section section-center">
       <h2 class="section-heading">Let's Build Something</h2>
-      <p class="section-lede" style="margin: 0 auto var(--space-6);">Open to Platform Engineering, DevOps, SRE, Forward
+      <p class="section-lede">Open to Platform Engineering, DevOps, SRE, Forward
         Deployed Engineer and technical leadership conversations.</p>
-      <div class="hero-ctas" style="justify-content: center;">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/amanpreet-dev/" target="_blank"
-          rel="noopener noreferrer">Let's Collaborate</a>
+      <div class="hero-ctas hero-ctas-center">
+        <a class="btn btn-primary" href="mailto:hire@amanpreet.dev?subject=Hiring%20enquiry">Hire Me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/amanpreet-dev/" target="_blank"
+          rel="noopener noreferrer">Connect on LinkedIn</a>
+        <a class="btn btn-tertiary" href="/assets/resume.pdf" download>Download resume</a>
       </div>
-      <div class="social-row" style="justify-content: center; margin-top: var(--space-6);">
+      <div class="social-row social-row-center">
         <a href="https://github.com/amanpreet-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg role="img" viewBox="0 0 24 24" aria-hidden="true">
             <path
